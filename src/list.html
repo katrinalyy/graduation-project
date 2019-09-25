@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>手提包</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/bus.css"/>
+	<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	<link rel="stylesheet" type="text/css" href="css/list.css"/>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/cookie.js"></script>
+	<script src="js/list.js"></script>
+	<body>
+		<!--头部部分，包括头部以及大的导航栏-->
+		<div id="headerWrap">
+			<!--头部部分-->
+			<div class="header">
+				<!--左边的列表-->
+				<div class="left">
+					<span class="user">您好，<a href="#" class="log"></a><a href="#" class="out">【退出】</a></span>
+					<a href="login.html" class="left login" title="登录">登录/</a><a href="register.html" class="left regi" title="注册">注册</a>
+					<a href="shop.html" class="shopping left">
+						购物袋 <span class="shopnum">0 </span> 件
+						<i>购物袋暂时没有商品!</i>
+					</a>
+					<div class="left list">我的温创居<span>∨</span>
+						<ul>
+							<li><a href="information.html">我的资料</a></li>
+							<li><a href="">我的订单</a></li>
+							<li><a href="">自助退货</a></li>
+							<li><a href="">我的收藏</a></li>
+							<li><a href="">帮助中心</a></li>
+							
+						</ul>
+					</div>						
+				</div>
+				<!--logo区域-->
+				<h1 class="logo"><a href="index.html"></a></h1>
+				<!--搜索框-->
+				<div class="search right">
+					<input type="text" value="请搜索灯具试试" class="left"/>
+					<a href="#" class="left"></a>
+				</div>
+			</div>
+			<div class="bigNav">
+				<ul>
+					<li class="first"><a href="index.html">首页</a></li>
+					<li><a href="">家居良品</a></li>
+					<li><a href="">清新萌物</a></li>
+					<li><a href="">商品入驻</a></li>
+					<li><a href="">关于我们</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<!--子导航栏-->
+		<div id="navWrap">
+			<div class="smallnav">
+				<ul>
+					<li>
+						<a href="">生活</a>
+						<div class="subnav">
+							<img src="images/index/subnav2.jpg"/>
+						</div>
+					
+					</li>
+					<li>
+						<a href="">家居</a>
+						<div class="subnav">
+							<img src="images/index/subnav1.jpg" alt="" />
+						</div>
+					</li>
+					<li>
+						<a href="list.html">灯具</a>
+						<div class="subnav">
+							<img src="images/index/subnav3.jpg"/>
+						</div>
+					</li>
+					<li>
+						<a href="">厨卫</a>
+						<div class="subnav1">
+							<img src="images/index/subnav4.jpg" alt="" />
+						</div>
+					</li>
+					<li>
+						<a href="">餐具</a>
+						<div class="subnav2">
+							<img src="images/index/subnav5.jpg"/>
+						</div>
+					</li>
+					<li>
+						<a href="">桌椅</a>
+						<div class="subnav3">
+							<img src="images/index/subnav6.jpg" alt="" />
+						</div>
+					</li>
+					<li>
+						<a href="">沙发</a>
+						<div class="subnav4">
+							<img src="images/index/subnav7.jpg"/>
+						</div>
+					</li>
+					<li>
+						<a href="">收纳</a>
+						<div class="subnav5">
+							<img src="images/index/subnav8.jpg"/>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--主体内容区域-->
+		<!--位置区域-->
+		<div id="locate">
+			<!--您的位置左部分区域-->
+			<div class="left locate">
+				<span class="left">您的位置 :</span>
+				<a href="index.html" class="left">温创居首页</a>
+				<img src="images/list/jts.jpg"/>
+				<div class="left locatelist">
+					<a href="#">
+						<span class="left">灯具</span>
+						<img src="images/list/xia.jpg" class="left"/>
+					</a>
+					<span class="girlsbag">
+						<a href="#">LED灯</a>
+						<a href="#">创意灯</a>
+						<a href="#">户外灯</a>
+						<a href="#">吊灯</a>
+						<a href="#">夜灯</a>
+						<a href="#">台灯</a>
+						<a href="#">壁灯</a>
+						<a href="#">感应灯</a>
+						<a href="#">折叠灯</a>
+					</span>
+				</div>
+				
+				
+
+			</div>
+			
+			<!--总计商品区域-->
+			<div class="right goods">
+				总共<span>178</span>件商品
+			</div>
+		</div>
+		
+		<!--属性区域-->
+		<div class="attr">
+			<!--品牌区域-->
+			<div class="pinpai">
+				<div class="headline left">类型 :</div>
+				<div class="attrcontent left">
+					<div class="pinpailist left">
+						<div class="searchbox left">
+							<div>
+								<div></div>
+								<input type="text" placeholder="搜索类型名称"/>
+							</div>
+						</div>
+						<ul class="left">
+							<li><a href="#">LED灯</a></li>
+							<li><a href="#">创意灯</a></li>
+							<li><a href="#">吊灯</a></li>
+							<li><a href="#">夜灯</a></li>
+							<li><a href="#">户外灯</a></li>
+							<li><a href="#">台灯</a></li>
+							<li><a href="#">壁灯</a></li>
+							<li><a href="#">感应灯</a></li>
+							<li><a href="#">落地灯</a></li>
+							<li><a href="#">桌灯</a></li>
+							<li><a href="#">营灯</a></li>
+							<li><a href="#">灯泡</a></li>
+							<li><a href="#">创意灯具</a></li>
+							<li><a href="#">提灯</a></li>
+							<li><a href="#">落地灯</a></li>
+							<li><a href="#">烟囱灯</a></li>
+						</ul>
+						<div class="buttons left">
+							<input type="button" class="left sure" value="确定" disabled="disabled"/>
+							<input type="button" class="left cancel" value="取消" />
+						</div>
+					</div>
+					<a class="morecheck" href="#">多选</a>
+					<a class="unfold" href="#">展开</a>
+				</div>
+			</div>
+			
+			<!--价格区域-->
+			<div class="price">
+				<div class="priceheadline">价格 :</div>
+				<div class="pricelist">
+					<ul>
+						<li><a href="#">0-100元</a></li>
+						<li><a href="#">100-300元</a></li>
+						<li><a href="#">300-500元</a></li>
+						<li><a href="#">500-1000元</a></li>
+						<li><a href="#">1000-2000元</a></li>
+						<li><a href="#">2000元以上</a></li>
+					</ul>
+					<div class="priceif left">
+						自定义 : 
+						<input type="text" /> -
+						<input type="text" />
+						<input type="button" value="确定"/>
+					</div>
+				</div>
+			</div>
+			
+			<!--颜色区域-->
+			<div class="goodscolor">
+				<div class="headline left">颜色 :</div>
+				<div class="attrcontent left">
+					<div class="pinpailist left">
+						<ul class="left">
+							<li><a href="#">黑色</a></li>
+							<li><a href="#">蓝色</a></li>
+							<li><a href="#">红色</a></li>
+							<li><a href="#">粉色</a></li>
+							<li><a href="#">棕色</a></li>
+							<li><a href="#">米色</a></li>
+							<li><a href="#">其他</a></li>
+							<li><a href="#">多色</a></li>
+							<li><a href="#">金色</a></li>
+							<li><a href="#">灰色</a></li>
+							<li><a href="#">白色</a></li>
+							<li><a href="#">紫色</a></li>
+							<li><a href="#">黄色</a></li>
+							<li><a href="#">银色</a></li>
+							<li><a href="#">混合色</a></li>
+							<li><a href="#">绿色</a></li>
+						</ul>
+						<div class="buttons1 left">
+							<input type="button" class="left sure1" value="确定" disabled="disabled"/>
+							<input type="button" class="left cancel1" value="取消" />
+						</div>
+					</div>
+					<a class="morecheck1" href="#">多选</a>
+					<a class="unfold1" href="#">展开</a>
+				</div>
+			</div>
+			
+		</div>
+		<!--更多选项颜色区域-->
+		<div class="more">
+			<div></div>
+			<a href="#">更多选项(颜色等)</a>
+		</div>
+		
+		<div id="listcontent">
+			<div class="listheader">
+				<ul>
+					<li><a href="#">默认</a></li>
+					<li><a href="#">价格</a></li>
+					<li><a href="#">折扣</a></li>
+					<li><a href="#">上架时间</a></li>
+				</ul>
+				<div class="page">
+					<span>1/6</span>
+					<a href="#">上一页</a>
+					<a href="#">下一页</a>
+				</div>
+			</div>
+			<!--内容显示区域-->
+			<div class="listcontent">
+				<!--<dl>
+					<dt>
+						<a href="#"><img src="images/list/g1.jpg" alt="" /></a>
+						<div>
+							<p>可售尺码 :</p>
+							<a>均码</a>
+						</div>
+					</dt>
+					<dd>
+						<p>Tory Burch</p>
+						<a href="#">女士手提包 12169756 粉色</a>
+						<p><span>￥</span><span>2574</span> <del>￥<span>2860</span></del></p>
+					</dd>
+				</dl>-->
+			</div>
+			<div class="pagedown">
+				<div>
+					<a href="#">首页</a>
+					<a href="#">上一页</a>
+					<div class="pages left">
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+					</div>
+					<a href="#">下一页</a>
+					<a href="#">尾页</a>
+					<p>共<span>6</span>页</p>
+				</div>
+				
+			</div>
+			
+			<!--大搜索框-->
+			<div class="bigsearch">
+				<div>
+					<input type="text" />
+					<a href="#">搜索</a>
+				</div>				
+			</div>
+			
+			
+		</div>
+		
+		<div class="recommand">
+			<p>猜你喜欢Recommand</p>
+			<div class="wrapR">
+				<a class="leftarrow" href="#"></a>
+				<a class="rightarrow" href="#"></a>
+				<div class="recommandlistWrap">
+					<!--第一个-->
+					<div class="recommandlist">
+						<dl>
+							<dt><a href="#"><img src="images/list/r1.jpg"/></a></dt>
+							<dd>
+								<p>小夜灯</p>
+								<a href="#">兔子灯 变色小夜灯床头卧室减压拍拍灯。</a>
+								<p>￥<span>69</span></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="images/list/r2.jpg"/></a></dt>
+							<dd>
+								<p>LED台灯、小夜灯</p>
+								<a href="#">Heng Balance衡智能平衡磁吸半空开关-榉木款</a>
+								<p>￥<span>269</span></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="images/list/r3.jpg"/></a></dt>
+							<dd>
+								<p>吊灯</p>
+								<a href="#">揽月-20CM月球吊灯</a>
+								<p>￥<span>369</span></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="images/list/r4.jpg"/></a></dt>
+							<dd>
+								<p>壁灯</p>
+								<a href="#">韩国卡通可爱儿童房有线壁灯-普通版</a>
+								<p>￥<span>71</span></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="images/list/r5.jpg"/></a></dt>
+							<dd>
+								<p>LED感应灯</p>
+								<a href="#">公创智能光控LED节能感应灯-长条（小号）</a>
+								<p>￥<span>59</span></p>
+							</dd>
+						</dl>
+					</div>
+					<!--第二个-->
+					<div class="recommandlist">
+						<dl>
+							<dt><a href="#"><img src="images/list/r6.jpg"/></a></dt>
+							<dd>
+								<p>LED灯、台灯</p>
+								<a href="#">crasis/柯莱仕T800护眼LED阅读触摸蓝光台灯</a>
+								<p>￥<span>399</span></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="images/list/r7.jpg"/></a></dt>
+							<dd>
+								<p>LED灯、营灯</p>
+								<a href="#">创意节能LED多用途露营灯-白座</a>
+								<p>￥<span>69</span></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="images/list/r8.jpg"/></a></dt>
+							<dd>
+								<p>吊灯</p>
+								<a href="#">EQUILIBRIO悬浮灯</a>
+								<p>￥<span>230</span></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="images/list/r9.jpg"/></a></dt>
+							<dd>
+								<p>台灯、提灯</p>
+								<a href="#">Bento创意携式提灯</a>
+								<p>￥<span>320</span></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="images/list/r10.jpg"/></a></dt>
+							<dd>
+								<p>触碰式感应灯</p>
+								<a href="#">MIRRO面纸灯，触碰式感应灯具，同时可容纳所有面纸种类大小的收纳盒。</a>
+								<p>￥<span>550</span></p>
+							</dd>
+						</dl>
+					</div>
+					<!--第三个-->
+					<div class="recommandlist">
+						<dl>
+							<dt><a href="#"><img src="images/list/r11.jpg"/></a></dt>
+							<dd>
+								<p>台灯</p>
+								<a href="#">Balance台灯，充分地运用了黑与白、光与暗之间的对比与平衡。</a>
+								<p>￥<span>899</span></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="images/list/r12.jpg"/></a></dt>
+							<dd>
+								<p>吊灯</p>
+								<a href="#">几何简约吊灯agata</a>
+								<p>￥<span>220</span></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="images/list/r13.jpg"/></a></dt>
+							<dd>
+								<p>创意灯具</p>
+								<a href="#">Open space系列雕塑灯具 跨越维度玩转透视</a>
+								<p>￥<span>490</span></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="images/list/r14.jpg"/></a></dt>
+							<dd>
+								<p>灯泡</p>
+								<a href="#">这些灯泡很不一样，以太阳系天体为灵感的透亮设计</a>
+								<p>￥<span>200</span></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="images/list/r15.jpg"/></a></dt>
+							<dd>
+								<p>创意灯</p>
+								<a href="#">可以充电的迷你书灯Lumio+</a>
+								<p>￥<span>150</span></p>
+							</dd>
+						</dl>
+					</div>
+					<!--第四个-->
+					<div class="recommandlist">
+						<dl>
+							<dt><a href="#"><img src="images/list/r16.jpg"/></a></dt>
+							<dd>
+								<p>台灯</p>
+								<a href="#">萌鹿卖萌灯</a>
+								<p>￥<span>200</span></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="images/list/r17.jpg"/></a></dt>
+							<dd>
+								<p>台灯</p>
+								<a href="#">Grasslamp植物灯</a>
+								<p>￥<span>250</span></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="images/list/r18.jpg"/></a></dt>
+							<dd>
+								<p>折叠灯</p>
+								<a href="#">Recto-Verso可以折叠翻转使用的创意灯具</a>
+								<p>￥<span>179</span></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="images/list/r19.jpg"/></a></dt>
+							<dd>
+								<p>折叠灯</p>
+								<a href="#">ryun折扇灯 传统与现代风格的巧妙平衡</a>
+								<p>￥<span>210</span></p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="images/list/r20.jpg"/></a></dt>
+							<dd>
+								<p>台灯</p>
+								<a href="#">一盏只为iPhone而生的台灯Nuans</a>
+								<p>￥<span>590</span></p>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--关于我们-->
+		<div id="aboutUsWrap">
+			<div class="aboutUs">
+				<div class="left online">
+					<a href="#"></a>
+					<p></p>
+					<a href="#"></a>
+				</div>
+				<ul class="left">
+					<li><a href="#">招贤纳士</a></li>
+					<li><a href="#">CEO邮箱</a></li>
+					<li><a href="#">售后服务</a></li>
+					<li><a href="#">常见问题</a></li>
+					<li>
+						<a href="#">关于我们</a>
+						<div class="arrow">
+						</div>
+						<div class="supply">
+							温创居秉着客户至上的原则为您服务，在保证质量的基础上，为您提供更优质的服务。有什么建议或者需求请投递CEO邮箱，我们随时回馈您的消息。
+						</div>
+					</li>
+					<li><a href="#">物流配送</a></li>
+				</ul>
+				<div class="about left">
+					<div><h2>关注我们</h2></div>
+					<div>
+						<a href="#"><div></div></a>
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+					</div>
+					<div>
+						<input type="text" class="left" placeholder="订购最新创新家居"/>
+						<a class="left" href="#"></a>
+					</div>
+				</div>
+				<div class="us right">
+					<p>我们的APP</p>
+					<a href="#"></a>
+				</div>
+			</div>
+		</div>
+			
+		<!--页脚-->
+		<div id="footer">
+			<ul class="footernav">
+				<li><a href="">关于温创居</a></li>
+				<li><a href="">About us</a></li>
+				<li><a href="">媒体报道</a></li>
+				<li><a href="">品牌招商</a></li>
+				<li><a href="">加入温创居</a></li>
+				<li><a href="">网站地图</a></li>
+				<li><a href="">联系我们</a></li>
+			</ul>
+			<p>Copyright © 2008-2018  版权所有  李阳阳  电子商务1401 20141722</p>
+			
+		</div>
+		
+	</body>
+</html>
+<script src="js/pub.js"></script>

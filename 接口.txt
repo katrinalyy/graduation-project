@@ -1,0 +1,20 @@
+1、http://localhost:3000  							进去后判断是否登录，如果没有登录，则显示登录界面，否则显示主界面。
+2、http://localhost:3000/static/view/				为登录页面（从1入口进入）
+3、http://localhost:3000/static/view/index2.html  	为主界面（从1入口进入）
+4、http://localhost:3000/getUser						登录时的服务器请求，判断进行登录操作
+
+5、http://localhost:3000/receiveImg  				轮播图上传图片接口。
+6、http://localhost:3000/getImg 						可获取上传的所有轮播图信息
+7、http://localhost:3000/delAdv						轮播图片的删除功能实现接口
+
+8、http://localhost:3000/changepwd					修改密码时的服务器请求，判断进行改密码操作
+
+9、http://localhost:3000/getUsers					获取数据库中所有用户信息
+10、http://localhost:3000/delCustomer				客户删除功能实现接口
+11、	http://localhost:3000/delShops					删除客户时，相应的删除其购物车的实现接口
+12、http://localhost:3000/changeInfo					更改客户资料信息相应接口实现
+
+13、http://localhost:3000/addshop					添加商品接口
+14、http://localhost:3000/getshop					获取所有商品
+15、http://localhost:3000/delShop					删除商品
+16、http://localhost:3000/changeshop					修改商品资料

@@ -1,0 +1,223 @@
+body{
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+#contentinfo{
+	width: 1000px;
+	border: 1px solid #C6C6C6;
+	border-radius: 3% 3% 0 0 ;
+	margin:20px auto;
+	height: 600px;
+	
+}
+/*左部区域*/
+.menulist{
+	/*border: 1px solid red;*/
+	width: 250px;
+	height: 100%;
+	border-radius:3% 0 0 0 ;
+}
+.menulist a{
+	color: #000;
+}
+.menulist>p{
+	height: 50px;
+	background: #ececec;
+	padding-left: 20px;
+	font-size: 20px;
+	line-height: 50px;
+	/*border: 1px solid red;*/
+	border-radius: 20px 0 0 0;
+}
+.menulist>ul{
+	margin-bottom:10px;
+}
+.menulist>ul>a{
+	display: block;
+	background: #f3f2f2;
+	height: 30px;
+	padding-left: 15px;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 30px;
+}
+.menulist>ul>li{
+	padding-left: 20px;
+	line-height: 20px;
+	margin-top:6px;
+}
+.menulist>ul>li:hover a{
+	color:#e70017;
+	font-weight: bold;
+}
+.menulist .red a{
+	color:#e70017;
+	font-weight: bold;
+}
+.menulist>ul>li>a{
+	color: #646464;
+}
+
+/*中间内容区域*/
+.infocontent{
+	width: 730px;
+	height: 100%;
+	padding-left: 10px;
+}
+.infocontent h3{
+	width:690px;
+	height:2px;
+	background:#f16e23;
+}
+.infocontent>p{
+	width: 650px;
+	height: 35px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #f78f34;
+	font-size: 16px;
+	line-height: 35px;
+	color: #f16a21;
+	background: url(../images/bg.png) no-repeat 20px center;
+	padding-left: 39px;
+}
+.menu-click{
+	width:355px;
+	height:30px;
+}
+
+.menu-click span{
+	display:block;
+	float:left;
+	width:115px;
+	color:#333;
+	background:#eae8e8;
+	text-align: center;
+	line-height: 30px;
+	margin-right:3px;
+	border-radius: 3px 3px 0 0 ;
+	height:30px;
+}
+.menu-click span:first-child{
+	background:#f16e23;
+	color:#fff;
+}
+.con-click{
+	min-height:221px;
+	margin:32px 0 0 65px;
+	/*display: none;*/
+}
+.con-click p{
+	margin-bottom:20px;
+	font-size:12px;
+	color:#555;
+}
+.con-click sup{
+	color: red;
+}
+.con-click>p>span{
+	margin-left: 5px;
+	color: #9A9A9A;
+	display: none;
+}
+.con-click p:nth-child(1)>input{
+	width:150px;
+	height:20px;
+}
+
+.con-click p input{
+	margin-left:7px;
+}
+.con-click p:nth-child(6) input{
+	width:83px;
+	height:26px;
+	background:#c71600;
+	color:#fff;
+	border:none;
+	border-radius: 5px;;
+}
+.con-click p:nth-child(5) select{
+	margin-right:20px;
+} 
+.con-click p:nth-child(5) select:nth-child(1){
+	min-width:120px;
+	margin-left:7px;
+	
+}
+.con-click p:nth-child(4) select:nth-child(1){
+	margin-left:7px;
+	
+}
+.con-click p:nth-child(5) select:nth-child(2){
+	
+}
+.con-click p:nth-child(5) select:nth-child(3){
+	
+	margin-right:0;
+}
+/*2*/
+.con2-click{
+	width:690px;
+	height:430px;
+	/*position: absolute;
+	top:122px;*/
+	display: none;
+}
+.con3-click{
+	padding-left: 50px;
+	padding-top: 20px;
+	display: none;
+}
+.con3-click p{
+	line-height: 40px;
+}
+.pic-con{
+	width:688px;
+	height:334px;
+	border:1px solid #ccc;
+	margin-top:14px;
+}
+.pic1{
+	width:66%;
+	height:334px;
+	border-right:1px solid #ccc;
+	float:left;
+}
+.pic2{
+	width:33%;
+	float:left;
+	height:334px;
+	text-align: center;
+}
+.pic2 h4{
+	margin-top:105px;
+	font-size:12px;
+	color:#000;
+}.pic2 h6{
+	font-size:12px;
+	color:#000;
+}
+.pic2 h5{
+	width:120px;
+	height:120px;
+	border:1px solid #f7f7f7;
+	background: #f7f7f7 url(../images/222.png) no-repeat 33px bottom;
+	margin:8px auto;
+}
+.cuan{
+	width:190px;
+	margin:24px auto;
+}
+.cuan span{
+	width:83px;
+	display: inline-block;
+	height:26px;
+	background:#c71600;
+	color:#fff;
+	border:none;
+	font-size:12px;
+	text-align: center;
+	line-height: 26px;
+	border-radius: 5px;;
+}
+
+

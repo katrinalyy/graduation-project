@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>温创居</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/bus.css"/>
+	<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/cookie.js"></script>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!--<script src="js/public.js"></script>-->
+	
+	<script src="js/index.js"></script>
+	
+	<body>
+		<!--头部部分，包括头部以及大的导航栏-->
+		<div id="headerWrap">
+			<!--头部部分-->
+			<div class="header">
+				<!--左边的列表-->
+				<div class="left">
+					<span class="user">您好，<a href="#" class="log"></a><a href="#" class="out">【退出】</a></span>
+					<a href="login.html" class="left login" title="登录">登录/</a><a href="register.html" class="left regi" title="注册">注册</a>
+					<a href="shop.html" class="shopping left">
+						购物袋 <span class="shopnum">0 </span> 件
+						<i>购物袋暂时没有商品!</i>
+					</a>
+					<div class="left list">我的温创居<span>∨</span>
+						<ul>
+							<li><a href="information.html">我的资料</a></li>
+							<li><a href="">我的订单</a></li>
+							<li><a href="">自助退货</a></li>
+							<li><a href="">我的收藏</a></li>
+							<li><a href="">帮助中心</a></li>
+							
+						</ul>
+					</div>						
+				</div>
+				<!--logo区域-->
+				<h1 class="logo"><a href="index.html"></a></h1>
+				<!--搜索框-->
+				<div class="search right">
+					<input type="text" value="请搜索灯具试试" class="left"/>
+					<a href="#" class="left"></a>
+				</div>
+			</div>
+			<div class="bigNav">
+				<ul>
+					<li class="first"><a href="index.html">首页</a></li>
+					<li><a href="">家居良品</a></li>
+					<li><a href="">清新萌物</a></li>
+					<li><a href="">商品入驻</a></li>
+					<li><a href="">关于我们</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<!--子导航栏-->
+		<div id="navWrap">
+			<div class="smallnav">
+				<ul>
+					<li>
+						<a href="">生活</a>
+						<div class="subnav">
+							<img src="images/index/subnav2.jpg"/>
+						</div>
+					
+					</li>
+					<li>
+						<a href="">家居</a>
+						<div class="subnav">
+							<img src="images/index/subnav1.jpg" alt="" />
+						</div>
+					</li>
+					<li>
+						<a href="list.html">灯具</a>
+						<div class="subnav">
+							<img src="images/index/subnav3.jpg"/>
+						</div>
+					</li>
+					<li>
+						<a href="">厨卫</a>
+						<div class="subnav1">
+							<img src="images/index/subnav4.jpg" alt="" />
+						</div>
+					</li>
+					<li>
+						<a href="">餐具</a>
+						<div class="subnav2">
+							<img src="images/index/subnav5.jpg"/>
+						</div>
+					</li>
+					<li>
+						<a href="">桌椅</a>
+						<div class="subnav3">
+							<img src="images/index/subnav6.jpg" alt="" />
+						</div>
+					</li>
+					<li>
+						<a href="">沙发</a>
+						<div class="subnav4">
+							<img src="images/index/subnav7.jpg"/>
+						</div>
+					</li>
+					<li>
+						<a href="">收纳</a>
+						<div class="subnav5">
+							<img src="images/index/subnav8.jpg"/>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--banner区域-->
+		<div id="bannerWrap">
+			<div class="banner">
+				<img src="" alt="" />
+				<img src="" alt="" />
+				<img src="" alt="" />
+				<img src="" alt="" />
+			</div>
+			<div class="icon">
+				<div class="active"></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			
+		</div>
+		
+		
+		<!--内容区域-->
+		<div id="content">
+			<!--最新区域-->
+			<div class="mostNew" id="mostNew">
+				<h3><img src="images/topic_za.jpg"/></h3>
+				<div class="mostpic">
+					<a class="left" href="#">
+						<!--http://www.fsdpp.cn/jiaju/15238916786329.html-->
+						<img src="images/index/1.jpg"/>
+						<img src="images/index/zuixin_01.png"/>
+					</a>
+					<a class="left" href="#">
+						<img src="images/index/2.jpeg"/>
+						<img src="images/index/zuixin_02.png"/>
+					</a>
+				</div>
+			</div>
+			<!--尖货推介-->
+			<div class="topadvice" id="topadvice">
+				<h3><img src="images/goods_t.jpg"/></h3>
+				<div class="toptop">
+					<a href="#"><img src="images/index/1.bmp"/></a>
+					<a href="#"><img src="images/index/2.png"/></a>
+					<a href="#"><img src="images/index/3.png"/></a>
+					<a href="#"><img src="images/index/4.png"/></a>
+					<a href="#"><img src="images/index/5.png"/></a>
+					<a href="#"><img src="images/index/6.png"/></a>
+				</div>
+				<div class="topbottom">
+					<a href="#"><img src="images/index/7.jpg"/></a>
+					<a href="#"><img src="images/index/8.png"/></a>
+					<a href="#"><img src="images/index/9.png"/></a>
+				</div>
+			</div>
+			<!--热荐专题-->
+			<div class="advicetheme" id="advicetheme">
+				<h3><img src="images/topic_t.jpg"/></h3>
+				<div class="mostpic margin40">
+					<a class="left" href="#">
+						<img src="images/index/a1.jpg"/>
+						<img src="images/index/beats_01.png"/>
+					</a>
+					<a class="left" href="#">
+						<img src="images/index/a2.jpg"/>
+						<img src="images/index/beats_02.png"/>
+					</a>
+				</div>
+				<div class="mostpic">
+					<a class="left" href="#">
+						<img src="images/index/a3.jpg"/>
+						<img src="images/index/beats_03.png"/>
+					</a>
+					<a class="left" href="#">
+						<img src="images/index/a2.2.jpg"/>
+						<img src="images/index/beats_04.png"/>
+					</a>
+				</div>
+			</div>
+
+			
+			<!--发现好货-->
+			<div class="findgoods" id="findgoods">
+				<h3><img src="images/found_t.jpg"/></h3>
+				<div class="goodslist">
+					<a href="#">
+						<dl>
+							<dt><img src="images/index/list1.jpg"/><span></span></dt>
+							<dd>
+								<h4>吸盘USB充电线</h4>
+								<p>天啊，我的USB充电线变成了触手怪，长出了吸盘！</p>
+								<p>￥59.0</p>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt><img src="images/index/list2.jpg"/><span></span></dt>
+							<dd>
+								<h4>树枝灯</h4>
+								<p>结满果实的树枝灯</p>
+								<p>￥418.0</p>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt><img src="images/index/list3.jpg"/><span></span></dt>
+							<dd>
+								<h4>鹦鹉创意咖啡杯</h4>
+								<p>MARACANA 鹦鹉创意咖啡杯</p>
+								<p>￥99.9</p>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt><img src="images/index/list4.jpg"/><span></span></dt>
+							<dd>
+								<h4>壁灯</h4>
+								<p>Modern Wall 可方便调节光亮方向的壁灯</p>
+								<p>￥220.0</p>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt><img src="images/index/list5.jpg"/><span></span></dt>
+							<dd>
+								<h4>创意书架</h4>
+								<p>Oblique 简约造型的创意书架</p>
+								<p>￥68.0</p>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt><img src="images/index/list6.jpg"/><span></span></dt>
+							<dd>
+								<h4>两用马桶刷</h4>
+								<p>BLOOM 两用马桶刷子</p>
+								<p>￥46.0</p>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt><img src="images/index/list7.jpg"/><span></span></dt>
+							<dd>
+								<h4>飞翔灯泡</h4>
+								<p>Lucellino 努力飞翔的灯泡</p>
+								<p>￥79.0</p>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt><img src="images/index/list8.jpg"/><span></span></dt>
+							<dd>
+								<h4>场景式跑步机</h4>
+								<p>Voyager 超酷场景式跑步机</p>
+								<p>￥1028.0</p>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt><img src="images/index/list9.jpg"/><span></span></dt>
+							<dd>
+								<h4>创意衣架</h4>
+								<p>Stretchless 不伤衣领的衣架</p>
+								<p>￥39.9</p>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt><img src="images/index/list10.jpg"/><span></span></dt>
+							<dd>
+								<h4>壁挂时钟</h4>
+								<p>Glance 智能壁挂时钟</p>
+								<p>￥230.0</p>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt><img src="images/index/list11.jpg"/><span></span></dt>
+							<dd>
+								<h4>创意咖啡杯</h4>
+								<p>创意咖啡杯 正反都可用</p>
+								<p>￥49.9</p>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt><img src="images/index/list12.jpg"/><span></span></dt>
+							<dd>
+								<h4>竹椅</h4>
+								<p>气质领结竹椅设计</p>
+								<p>￥45.4</p>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt><img src="images/index/list13.jpg"/><span></span></dt>
+							<dd>
+								<h4>水龙头</h4>
+								<p>ARC 优雅水龙头设计</p>
+								<p>￥319.0</p>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt><img src="images/index/list14.jpg"/><span></span></dt>
+							<dd>
+								<h4>卷曲木家具</h4>
+								<p>奇特的卷曲木家具,你可以很任性的把它变成任何你想要的样子。</p>
+								<p>￥320.0</p>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt><img src="images/index/list15.jpg"/><span></span></dt>
+							<dd>
+								<h4>Z字型冰箱</h4>
+								<p>Z-Refrigerator Z字形超酷冰箱</p>
+								<p>￥1999.9</p>
+							</dd>
+						</dl>
+					</a>
+					<a href="#">
+						<dl>
+							<dt><img src="images/index/list16.jpg"/><span></span></dt>
+							<dd>
+								<h4>西瓜切</h4>
+								<p>Pepo 趣味雪糕西瓜切</p>
+								<p>￥39.9</p>
+							</dd>
+						</dl>
+					</a>
+				</div>
+				<div class="moregoods">
+					<a href="#"><img src="images/fonud_m.jpg"/></a>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!--关于我们-->
+		<div id="aboutUsWrap">
+			<div class="aboutUs">
+				<div class="left online">
+					<a href="#"></a>
+					<p></p>
+					<a href="#"></a>
+				</div>
+				<ul class="left">
+					<li><a href="#">招贤纳士</a></li>
+					<li><a href="#">CEO邮箱</a></li>
+					<li><a href="#">售后服务</a></li>
+					<li><a href="#">常见问题</a></li>
+					<li>
+						<a href="#">关于我们</a>
+						<div class="arrow">
+						</div>
+						<div class="supply">
+							温创居秉着客户至上的原则为您服务，在保证质量的基础上，为您提供更优质的服务。有什么建议或者需求请投递CEO邮箱，我们随时回馈您的消息。
+						</div>
+					</li>
+					<li><a href="#">物流配送</a></li>
+				</ul>
+				<div class="about left">
+					<div><h2>关注我们</h2></div>
+					<div>
+						<a href="#"><div></div></a>
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+					</div>
+					<div>
+						<input type="text" class="left" placeholder="订购最新创新家居"/>
+						<a class="left" href="#"></a>
+					</div>
+				</div>
+				<div class="us right">
+					<p>我们的APP</p>
+					<a href="#"></a>
+				</div>
+			</div>
+		</div>
+			
+		<!--页脚-->
+		<div id="footer">
+			<ul class="footernav">
+				<li><a href="">关于温创居</a></li>
+				<li><a href="">About us</a></li>
+				<li><a href="">媒体报道</a></li>
+				<li><a href="">品牌招商</a></li>
+				<li><a href="">加入温创居</a></li>
+				<li><a href="">网站地图</a></li>
+				<li><a href="">联系我们</a></li>
+			</ul>
+			<p>Copyright © 2008-2018  版权所有  李阳阳  电子商务1401 20141722</p>
+			
+		</div>
+		
+		<div id="menu">
+			<div class="menu">
+				<a href="#bannerWrap"></a>
+				<a href="#mostNew"></a>
+				<a href="#topadvice"></a>
+				<a href="#advicetheme"></a>
+				<a href="#findgoods"></a>
+				<a href="#"></a>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/pub.js"></script>

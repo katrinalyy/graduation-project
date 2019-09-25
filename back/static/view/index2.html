@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../css/index2.css"/>
+	<body>
+		<!--头部-->
+		<div class="header">
+			<h1><a href="#"><img src="../img/logo4.png"/></a></h1>
+			<h2>后 台 管 理 系 统</h2>
+		</div>
+		<!--中间内容区-->
+		<div class="con">
+			<!--左边菜单栏-->
+			<div class="menu">
+				<ul>
+					<li>
+						个人中心
+						<ul>
+							<li><a href="#" class="own">重设密码</a></li>
+						</ul>
+					</li>
+					<li>
+						商品管理
+						<ul>
+							<li><a href="" class="adshop">商品列表</a></li>
+							<li><a href="" class="newadd2">商品添加</a></li>
+							<li><a href="" class="adshop">商品删除</a></li>
+							<li><a href="" class="adshop">商品修改</a></li>
+						</ul>
+					</li>
+					<li>
+						客户管理
+						<ul>
+							<li><a href="#" class="cus">客户列表</a></li>
+							<li><a href="#" class="cus">客户删除</a></li>
+							<li><a href="#" class="cus">客户修改</a></li>
+						</ul>
+					</li>
+					<li>
+						广告管理
+						<ul>
+							<li><a href="#" class="ad">广告列表</a></li>
+							<li><a href="#" class="ad2">广告上传</a></li>
+							<li><a href="#" class="ad">广告删除</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!--右边内容区-->
+			<div class="content">
+				<form action="http://localhost:3000/receiveImg" method="post" enctype="multipart/form-data" class="c1">
+					<p>图片名称： <input type="text" name="tit"/></p>
+					<p><input type="file" name="infoImg"/></p>
+					<p><input type="submit" value="提交"/></p>
+				</form>
+				<div class="c3">
+					<a href="#" class="addad">新增</a>
+					<div class="adtitle">
+						<span>图片ID</span>
+						<span>图片名称</span>
+						<span>图片地址</span>
+						<span>操作</span>
+					</div>
+					<div class="adcontent">
+						<!--<ul>
+							<li>0</li>
+							<li>1</li>
+							<li>2</li>
+							<li><a href="#">删除</a></li>
+						</ul>-->
+						
+					</div>
+				</div>
+				<div class="c2">
+					<a href="#" class="own">
+						<img src="../img/shezhi.png" alt="" />
+						<span>个人中心</span>
+					</a>
+					<a href="#" class="adshop">
+						<img src="../img/chanpin.png" alt="" />
+						<span>商品管理</span>
+					</a>
+					<a href="#" class="cus">
+						<img src="../img/yonghu.png" alt="" />
+						<span>客户管理</span>
+					</a>
+					<a href="#" class="ad">
+						<img src="../img/ad.png" alt="" />
+						<span>广告管理</span>
+					</a>
+				</div>
+				<form class="owncontent" action="http://localhost:3000/changepwd" method="post" enctype="multipart/form-data">
+					<p>原密码: <input type="password" name="adpwd"/></p>
+					<p>新密码: <input type="password" name="radpwd" class="new1"/></p>
+					<p>重复新密码: <input type="password" class="new2"/></p>
+					<p><input type="submit" value="提交"/></p>
+				</form>
+				<div class="customer">
+					<div class="ctitle">
+						<span>编号</span>
+						<span>用户名</span>
+						<span>密码</span>
+						<span>性别</span>
+						<span>出生年月</span>
+						<span>地址</span>
+						<span>邮箱</span>
+						<span>操作</span>
+					</div>
+					<div class="ccontent"> 
+						<!--<ul>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+							<li><a href="#" class="amend">修改</a>---<a href="#" class="remove">删除</a></li>
+						</ul>-->
+						
+					</div>
+					
+					<div class="bottom">
+						<a href="#">上一页 &nbsp;&nbsp;</a>
+						<span>第</span>
+						<i>1</i>
+						<span>页 &nbsp;&nbsp;共</span>
+						<em>-</em>
+						<span>页</span>
+						<a href="#">&nbsp;&nbsp; 下一页</a>
+					</div>
+					
+				</div>
+				<div class="amendc">
+					<form action="http://localhost:3000/changeInfo" method="post" enctype="multipart/form-data">
+						<input type="hidden" name="oriid" class="amendc0"/>
+						<p>编 号 : &nbsp;&nbsp;<input type="text" name="id" class="amendc1"/></p>
+						<p>用户名 : <input type="text" name="username" class="amendc2"/></p>
+						<p>密 码 : <input type="text" name="pwd" class="amendc3"/></p>
+						<p>性 别 : <input type="text" name="sex" class="amendc4"/></p>
+						<p>出生年月: <input type="text" name="birthday" class="amendc5"/></p>
+						<p>地 址 : <input type="text" name="address" class="amendc6"/></p>
+						<p>邮 箱 : <input type="text" name="email" class="amendc7"/></p>
+						<p><input type="submit" value="提交"/></p>
+					</form>
+				</div>
+				
+				<!--商品管理区域-->
+				<div class="shop">
+					<a href="#" class="newadd">新增</a>
+					<div class="shoptitle">
+						<span>编号</span>
+						<span>商品名</span>
+						<span>原价</span>
+						<span>现价</span>
+						<span>类型</span>
+						<span>描述信息</span>
+						<span>商品颜色</span>
+						<span>图片地址</span>
+						<span>库存</span>
+						<span>操作</span>
+					</div>
+					<div class="shopcontent"> 
+						<!--<ul>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>3+</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li><a href="#" class="amend">修改</a>---<a href="#" class="remove">删除</a></li>
+						</ul>-->
+						
+						
+					</div>
+					
+					<div class="bottom">
+						<a href="#">上一页 &nbsp;&nbsp;</a>
+						<span>第</span>
+						<i>1</i>
+						<span>页 &nbsp;&nbsp;共</span>
+						<em>-</em>
+						<span>页</span>
+						<a href="#">&nbsp;&nbsp; 下一页</a>
+					</div>
+				</div>
+				<div class="newaddshop">
+					<form action="http://localhost:3000/addshop" method="post" enctype="multipart/form-data">
+						<p>商品名 : <input type="text" name="gname" /></p>
+						<p>原 价 : <input type="text" name="goprice" /></p>
+						<p>现 价 : <input type="text" name="gnprice" /></p>
+						<p>类 型 : <input type="text" name="gtype" /></p>
+						<p>描述信息: <input type="text" name="gtitle" /></p>
+						<p>商品颜色: <input type="text" name="gcolor" /></p>
+						<p>图片地址: <input type="text" name="gsrc" /></p>
+						<p>库 存: <input type="text" name="gstore" /></p>
+						<p><input type="submit" value="提交"/></p>
+					</form>
+				</div>
+				<div class="amends">
+					<form action="http://localhost:3000/changeshop" method="post" enctype="multipart/form-data">
+						<input type="hidden" name="goid" class="amends0"/>
+						<p>编 号 : &nbsp;&nbsp;<input type="text" name="gid" class="amends1"/></p>
+						<p>商品名 : <input type="text" name="gname" class="amends2"/></p>
+						<p>原 价 : <input type="text" name="goprice" class="amends3"/></p>
+						<p>现 价 : <input type="text" name="gnprice" class="amends4"/></p>
+						<p>类 型: <input type="text" name="gtype" class="amends5"/></p>
+						<p>描述信息 : <input type="text" name="gtitle" class="amends6"/></p>
+						<p>商品颜色 : <input type="text" name="gcolor" class="amends7"/></p>
+						<p>图片地址 : <input type="text" name="gsrc" class="amends8"/></p>
+						<p>库 存 : <input type="text" name="gstore" class="amends9"/></p>
+						<p><input type="submit" value="提交"/></p>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/index.js"></script>

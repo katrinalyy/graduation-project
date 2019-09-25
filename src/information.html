@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/bus.css"/>
+	<link rel="stylesheet" type="text/css" href="css/info.css"/>
+	<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/cookie.js"></script>
+	
+	<body>
+		<!--头部部分，包括头部以及大的导航栏-->
+		<div id="headerWrap">
+			<!--头部部分-->
+			<div class="header">
+				<!--左边的列表-->
+				<div class="left">
+					<span class="user">您好，<a href="#" class="log"></a><a href="#" class="out">【退出】</a></span>
+					<a href="login.html" class="left login" title="登录">登录/</a><a href="register.html" class="left regi" title="注册">注册</a>
+					<a href="shop.html" class="shopping left">
+						购物袋 <span class="shopnum">0 </span> 件
+						<i>购物袋暂时没有商品!</i>
+					</a>
+					<div class="left list">我的温创居<span>∨</span>
+						<ul>
+							<li><a href="">我的资料</a></li>
+							<li><a href="">我的订单</a></li>
+							<li><a href="">自助退货</a></li>
+							<li><a href="">我的收藏</a></li>
+							<li><a href="">帮助中心</a></li>
+							
+						</ul>
+					</div>						
+				</div>
+				<!--logo区域-->
+				<h1 class="logo"><a href="index.html"></a></h1>
+				<!--搜索框-->
+				<div class="search right">
+					<input type="text" value="请搜索灯具试试" class="left"/>
+					<a href="#" class="left"></a>
+				</div>
+			</div>
+			<div class="bigNav">
+				<ul>
+					<li class="first"><a href="index.html">首页</a></li>
+					<li><a href="">家居良品</a></li>
+					<li><a href="">清新萌物</a></li>
+					<li><a href="">商品入驻</a></li>
+					<li><a href="">关于我们</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<!--子导航栏-->
+		<div id="navWrap">
+			<div class="smallnav">
+				<ul>
+					<li>
+						<a href="">生活</a>
+						<div class="subnav">
+							<img src="images/index/subnav2.jpg"/>
+						</div>
+					
+					</li>
+					<li>
+						<a href="">家居</a>
+						<div class="subnav">
+							<img src="images/index/subnav1.jpg" alt="" />
+						</div>
+					</li>
+					<li>
+						<a href="list.html">灯具</a>
+						<div class="subnav">
+							<img src="images/index/subnav3.jpg"/>
+						</div>
+					</li>
+					<li>
+						<a href="">厨卫</a>
+						<div class="subnav1">
+							<img src="images/index/subnav4.jpg" alt="" />
+						</div>
+					</li>
+					<li>
+						<a href="">餐具</a>
+						<div class="subnav2">
+							<img src="images/index/subnav5.jpg"/>
+						</div>
+					</li>
+					<li>
+						<a href="">桌椅</a>
+						<div class="subnav3">
+							<img src="images/index/subnav6.jpg" alt="" />
+						</div>
+					</li>
+					<li>
+						<a href="">沙发</a>
+						<div class="subnav4">
+							<img src="images/index/subnav7.jpg"/>
+						</div>
+					</li>
+					<li>
+						<a href="">收纳</a>
+						<div class="subnav5">
+							<img src="images/index/subnav8.jpg"/>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--中间内容区-->
+		<div id="contentinfo">
+			<!--左边部分-->
+			<div class="left menulist">
+				<p><a href="#">我的温创居</a></p>
+				<ul>
+					<a href="#">我的交易</a>
+					<li><a href="#">》订单管理</a></li>
+					<li><a href="#">》我的收藏</a></li>
+					<li><a href="#">》商品评论</a></li>
+					<li><a href="#">》退换货申请</a></li>
+					<li><a href="#">》退换货记录</a></li>
+				</ul>
+				<ul>
+					<a href="#">我的账户</a>
+					<li class="red"><a href="#">》个人资料</a></li>
+					<li><a href="#">》收货地址</a></li>
+					<li><a href="#">》安全中心</a></li>
+					<li><a href="#">》绑定账户</a></li>
+				</ul>
+				<ul>
+					<a href="#">服务中心</a>
+					<li><a href="#">》系统消息</a></li>
+					<li><a href="#">》我的吐槽</a></li>
+				</ul>
+			</div>
+			<!--中间部分-->
+			<div class="left infocontent">
+				<p>个人资料</p>
+				<div class="menu-click">
+					<span id="span-left">基础资料</span>
+					<span id="span-right">编辑头像</span>
+					<span id="span-pwd">修改密码</span>
+				</div>
+				<h3></h3>
+				<div class="con-click">
+					<input type="hidden" name="username" value="" class="hiddenuser"/>
+					<p><sup>*</sup>账号:<input type="text" class="username" name="username"/><span>6-20位字符，只能由字母、数字、"_"组成</span></p>
+					<p><sup>*</sup>邮箱:<input type="email" name="email" class="email"/></p>
+					<p><sup>*</sup>性别:<input type="radio" name="gender"/>男<input type="radio" name="gender"/>女</p>
+					<p>生日:
+						<select class="year">
+							<option ></option>
+							<option >2011</option>
+							<option >2012</option>
+							<option >2013</option>
+							<option >2014</option>
+							<option >2015</option>
+							<option >2016</option>
+							<option >2017</option>
+							<option >2018</option>
+							<option >2019</option>
+							<option >2010</option>
+						</select>年
+						<select class="month">
+							<option ></option>
+							<option >1</option>
+							<option >2</option>
+							<option >3</option>
+							<option >4</option>
+							<option >5</option>
+							<option >6</option>
+							<option >7</option>
+							<option >8</option>
+							<option >9</option>
+							<option >10</option>
+							<option >11</option>
+							<option >12</option>
+						</select>月
+						<select  class="day1">
+							<option ></option>
+			
+						</select>日
+					</p>
+					<p>地址:
+						<select id="prov">
+							<option >请选择省</option>
+						</select>
+						<select  id="city">
+							<option >请选择市</option>
+						</select>
+						<select  id="county">
+							<option >请选择县</option>
+						</select>
+					</p>
+					<p><input type="button" value="确认" class="button"/></p>
+				</div>
+				<!--2-->
+				<div class="con2-click">
+					<input type="file" value="请选择你的头像"/>
+					<div class="pic-con">
+						<div class="pic1"></div>
+						<div class="pic2">
+							<h4>预览效果</h4>
+							<h5></h5>
+							<h6>120*120像素</h6>
+						</div>
+					</div>
+					<div class="cuan">
+						<span>保存</span>
+						<span>取消</span>
+					</div>
+				</div>
+				<form class="con3-click">
+					<input type="hidden" name="username" value="" class="hiddenuser"/>
+					<p>初始密码：<input type="password" name="originpwd" class="originpwd"/></p>
+					<p>新 密 码：<input type="password" name="newpwd" class="newpwd"/></p>
+					<p>再次输入：<input type="password" class="cnewpwd"/></p>
+					<p><input type="button" value="提交" class="chagepwd"/></p>
+				</form>
+			</div>
+			
+		</div>
+	
+		<!--关于我们-->
+		<div id="aboutUsWrap">
+			<div class="aboutUs">
+				<div class="left online">
+					<a href="#"></a>
+					<p></p>
+					<a href="#"></a>
+				</div>
+				<ul class="left">
+					<li><a href="#">招贤纳士</a></li>
+					<li><a href="#">CEO邮箱</a></li>
+					<li><a href="#">售后服务</a></li>
+					<li><a href="#">常见问题</a></li>
+					<li>
+						<a href="#">关于我们</a>
+						<div class="arrow">
+						</div>
+						<div class="supply">
+							温创居秉着客户至上的原则为您服务，在保证质量的基础上，为您提供更优质的服务。有什么建议或者需求请投递CEO邮箱，我们随时回馈您的消息。
+						</div>
+					</li>
+					<li><a href="#">物流配送</a></li>
+				</ul>
+				<div class="about left">
+					<div><h2>关注我们</h2></div>
+					<div>
+						<a href="#"><div></div></a>
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+					</div>
+					<div>
+						<input type="text" class="left" placeholder="订购最新创新家居"/>
+						<a class="left" href="#"></a>
+					</div>
+				</div>
+				<div class="us right">
+					<p>我们的APP</p>
+					<a href="#"></a>
+				</div>
+			</div>
+		</div>
+			
+		<!--页脚-->
+		<div id="footer">
+			<ul class="footernav">
+				<li><a href="">关于温创居</a></li>
+				<li><a href="">About us</a></li>
+				<li><a href="">媒体报道</a></li>
+				<li><a href="">品牌招商</a></li>
+				<li><a href="">加入温创居</a></li>
+				<li><a href="">网站地图</a></li>
+				<li><a href="">联系我们</a></li>
+			</ul>
+			<p>Copyright © 2008-2018  版权所有  李阳阳  电子商务1401 20141722</p>
+			
+		</div>
+	</body>
+</html>
+<script src="js/pub.js"></script>
+<script src="js/info.js"></script>
